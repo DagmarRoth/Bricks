@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>When People Run Into Brick - A Data Story</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+            padding: 80px 20px;
+            border-bottom: 3px solid #d32f2f;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        h1 {
+            font-size: 3.5em;
+            font-weight: bold;
+            margin: 0 0 20px 0;
+            line-height: 1.2;
+            color: #1a1a1a;
+        }
+        
+        .byline {
+            font-size: 1em;
+            color: #666;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            padding: 15px 0;
+            margin: 20px 0 30px 0;
+        }
+        
+        h2 {
+            font-size: 2.2em;
+            font-weight: bold;
+            margin: 60px 0 25px 0;
+            color: #1a1a1a;
+            border-bottom: 3px solid #d32f2f;
+            padding-bottom: 12px;
+        }
+        
+        p {
+            font-size: 1.05em;
+            margin-bottom: 20px;
+            color: #333;
+            line-height: 1.8;
+        }
+        
+        .intro {
+            font-size: 1.2em;
+            color: #1a1a1a;
+            margin: 30px 0;
+            line-height: 1.8;
+        }
+        
+        .stat-box {
+            background-color: #f5f5f5;
+            border-left: 5px solid #d32f2f;
+            padding: 25px;
+            margin: 30px 0;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+        
+        .stat-box strong {
+            color: #d32f2f;
+            font-size: 1.3em;
+        }
+        
+        .section-intro {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        
+        .case {
+            margin: 25px 0;
+            padding: 20px;
+            border-left: 4px solid #d32f2f;
+            background-color: #fafafa;
+            border-radius: 2px;
+        }
+        
+        .case-label {
+            font-weight: bold;
+            font-size: 1.05em;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+        
+        .case-meta {
+            color: #666;
+            font-size: 0.95em;
+            margin-bottom: 12px;
+        }
+        
+        .case-text {
+            color: #333;
+            line-height: 1.7;
+        }
+        
+        .conclusion-box {
+            margin: 60px 0 40px 0;
+            padding: 30px;
+            background-color: #fff3cd;
+            border-left: 5px solid #d32f2f;
+            border-radius: 2px;
+        }
+        
+        .conclusion-box p {
+            font-size: 1.15em;
+            font-weight: bold;
+            color: #1a1a1a;
+            margin: 0;
+        }
+        
+        .findings {
+            margin: 30px 0;
+            font-size: 1.05em;
+            line-height: 2;
+        }
+        
+        .findings p {
+            margin-bottom: 20px;
+        }
+        
+        .findings strong {
+            color: #d32f2f;
+        }
+        
+        .footer {
+            margin-top: 80px;
+            padding-top: 30px;
+            border-top: 1px solid #ddd;
+            color: #999;
+            font-size: 0.9em;
+            line-height: 1.8;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+            h2 {
+                font-size: 1.6em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>When People Run Into Brick</h1>
+        <div class="byline">A hidden epidemic of preventable injuries across America | March 30, 2026</div>
+    </div>
+    
+    <div class="container">
+        <div class="intro">
+            <p>Each year, thousands of Americans visit emergency rooms and hospitals after colliding with brick. 
+            Walking, running, playing—in moments of distraction or mishap, brick structures leave their mark. 
+            This analysis of national hospital data reveals the surprising patterns of these preventable injuries, 
+            who they affect most, and where they happen.</p>
+        </div>
+        
+        <div class="stat-box">
+            <strong>Key Finding:</strong> Over the past year, <strong>101</strong> 
+            people sought hospital treatment for injuries caused by running into brick or brick structures.
+        </div>
+        
+        <h2>Who Gets Hurt?</h2>
+        <p class="section-intro">Children and young adults face the highest risk. Nearly 40% of all brick-related injuries 
+        occur in people under age 18, often while playing or engaged in recreational activities.</p>
+        
+        <div class="findings">
+            <p><strong>Key Stats:</strong></p>
+            <p>• Median age of injury victim: 13 years</p>
+            <p>• Age range: 2 to 85 years</p>
+            <p>• Most common injury type: Head</p>
+            <p>• Most common diagnosis: Laceration</p>
+            <p>• <strong>The head and face bear the brunt.</strong> Head injuries, lacerations, and contusions 
+            account for the majority of cases, suggesting the impact often comes suddenly and unexpectedly.</p>
+        </div>
+        
+        <h2>How Does It Happen?</h2>
+        <p class="section-intro">The circumstances vary widely: children falling off furniture at home, athletes colliding during play, 
+        runners and walkers momentarily distracted. But one pattern emerges—most often, someone was in motion.</p>
+        
+        <div class="findings">
+            <p><strong>Activity Breakdown:</strong></p>
+            <p>• Falling/Tripping: 60 injuries</p>
+            <p>• Walking: 6 injuries</p>
+            <p>• Running: 3 injuries</p>
+            <p>• Playing/Sports: 26 injuries</p>
+            <p>• <strong>Falling is by far the leading cause,</strong> suggesting that even routine movement poses a risk when brick structures are nearby.</p>
+        </div>
+        
+        <h2>Where and When Does It Happen?</h2>
+        <p class="section-intro">Brick injuries occur everywhere people gather and move: homes, schools, parks, and recreational areas.</p>
+        
+        <div class="findings">
+            <p><strong>Common Locations:</strong></p>
+            <p>• Home: 53 injuries</p>
+            <p>• School: 12 injuries</p>
+            <p>• Recreational areas: 8 injuries</p>
+            <p><strong>Hospital Outcomes:</strong></p>
+            <p>• Treated & Released: 90 cases (89.1%)</p>
+            <p>• Admitted: 8 cases (7.9%)</p>
+            <p><strong>Most injuries are treated and released,</strong> but a significant percentage require hospital admission, indicating serious trauma.</p>
+        </div>
+        
+        <h2>Real Stories</h2>
+        <p class="section-intro">Behind every statistic is a person, a moment, a preventable accident. Here are actual injury reports from hospitals across America.</p>
+        
+        <div class="case">
+            <div class="case-label">Case 1: Child Running Down a Ramp</div>
+            <div class="case-meta">Age 3, Treated & Released</div>
+            <div class="case-text">
+                <strong>Injury:</strong> Facial laceration<br/>
+                <strong>What happened:</strong> "3 year old running down the ramp fell hitting face against brick wall - 1cm laceration to eyebrow"
+            </div>
+        </div>
+        
+        <div class="case">
+            <div class="case-label">Case 2: Sports Injury at School</div>
+            <div class="case-meta">Age 14, Treated & Released</div>
+            <div class="case-text">
+                <strong>Injury:</strong> Concussion<br/>
+                <strong>What happened:</strong> "14 year old girl was playing handball at school, tripped over someone's foot and hit her head on a brick wall. Concussion and abrasion."
+            </div>
+        </div>
+        
+        <div class="case">
+            <div class="case-label">Case 3: Fall at Home</div>
+            <div class="case-meta">Age 72, Admitted to Hospital</div>
+            <div class="case-text">
+                <strong>Injury:</strong> Cervical spine fracture<br/>
+                <strong>What happened:</strong> "72 year old woman stumbled on steps and forehead hit brick wall at church. C-spine fracture - admitted to hospital."
+            </div>
+        </div>
+        
+        <div class="case">
+            <div class="case-label">Case 4: Playground Accident</div>
+            <div class="case-meta">Age 9, Admitted to Hospital</div>
+            <div class="case-text">
+                <strong>Injury:</strong> Lower leg fracture<br/>
+                <strong>What happened:</strong> "9 year old boy riding dirt bike got leg caught between bike and brick fence when making a turn. No helmet. Fracture of lower leg."
+            </div>
+        </div>
+        
+        <h2>What We Learned</h2>
+        
+        <div class="findings">
+            <p><strong style="color: #d32f2f; font-size: 1.1em;">1. It's a children's crisis first.</strong> 
+            More than 35% of all brick-related injuries occur in children and adolescents under age 18. 
+            Parents and educators should be aware of brick structures in playgrounds and recreational areas.</p>
+            
+            <p><strong style="color: #d32f2f; font-size: 1.1em;">2. Most occur at home.</strong> 
+            While schools and recreational areas account for significant numbers, home remains the most common location. 
+            Residential brick features—fireplaces, walls, columns—pose hidden dangers in everyday environments.</p>
+            
+            <p><strong style="color: #d32f2f; font-size: 1.1em;">3. The head bears the brunt.</strong> 
+            Head injuries and facial lacerations are by far the most common injuries, suggesting sudden, unexpected collisions. 
+            Even minor-seeming impacts can cause serious damage.</p>
+            
+            <p><strong style="color: #d32f2f; font-size: 1.1em;">4. It takes many forms.</strong> 
+            These injuries happen during ordinary moments—children falling from furniture, runners momentarily distracted, 
+            elderly people losing their footing. No single solution fits all contexts.</p>
+            
+            <p><strong style="color: #d32f2f; font-size: 1.1em;">5. Severity increases with age.</strong> 
+            While children suffer more injuries overall, elderly adults face higher hospitalization rates, suggesting their 
+            injuries are more severe and recovery more difficult.</p>
+        </div>
+        
+        <div class="conclusion-box">
+            <p>Every year, thousands of preventable injuries occur when Americans run into brick. 
+            With awareness and simple precautions in homes, schools, and public spaces, many of these injuries could be avoided.</p>
+        </div>
+        
+        <div class="footer">
+            <p><strong>Data Source:</strong> National Electronic Injury Surveillance System (NEISS), 
+            a nationally representative sample of hospital emergency departments across the United States.</p>
+            <p><strong>Methodology:</strong> Analysis based on 101 hospital visits 
+            where injuries involved brick or brick structures during the study period.</p>
+            <p><strong>Analysis Date:</strong> March 30, 2026</p>
+        </div>
+    </div>
+</body>
+</html>
